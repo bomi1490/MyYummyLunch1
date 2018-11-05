@@ -21,5 +21,6 @@ public class SettingActivity extends AppCompatActivity{
         Button check2_4 = (Button) findViewById(R.id.check2_4);
         Button check3_1 = (Button) findViewById(R.id.check3_1);
         Button check3_2 = (Button) findViewById(R.id.check3_2);
+        Button check3_3 = (Button) findViewById(R.id.check3_3);
     }
 }
