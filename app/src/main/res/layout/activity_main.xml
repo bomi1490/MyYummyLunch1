@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="<<<START>>>"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <Button
+        android:id="@+id/ExitButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="<<<EXIT>>>"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Food"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="333dp"
+        android:layout_height="43dp"
+        android:text="MY YUMMY LUNCH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="29dp" />
+
+</android.support.constraint.ConstraintLayout>
