@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,127 +10,159 @@
         android:id="@+id/textView"
         android:layout_width="308dp"
         android:layout_height="20dp"
-        android:text="원하는 조건을 선택하세요(복수선택 가능)"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_message2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/check1_1"
         android:layout_width="171dp"
         android:layout_height="50dp"
-        android:text="한식"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/check_message1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/check3_1"
         android:layout_width="114dp"
         android:layout_height="56dp"
-        android:text="저렴"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="397dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/check_message2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check2_3" />
 
     <CheckBox
         android:id="@+id/check3_2"
         android:layout_width="114dp"
         android:layout_height="56dp"
-        android:text="무난"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="397dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/check_message3"
+        app:layout_constraintStart_toEndOf="@+id/check3_1"
+        app:layout_constraintTop_toBottomOf="@+id/check2_3" />
 
     <CheckBox
         android:id="@+id/check3_3"
         android:layout_width="114dp"
         android:layout_height="56dp"
-        android:text="호화"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="397dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/check_message4"
+        app:layout_constraintStart_toEndOf="@+id/check3_2"
+        app:layout_constraintTop_toBottomOf="@+id/check2_4" />
 
     <CheckBox
         android:id="@+id/check2_2"
         android:layout_width="171dp"
         android:layout_height="50dp"
-        android:text="참살이"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="242dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/check_message5"
+        app:layout_constraintStart_toEndOf="@+id/check2_1"
+        app:layout_constraintTop_toBottomOf="@+id/check1_4" />
 
     <CheckBox
         android:id="@+id/check2_3"
         android:layout_width="171dp"
         android:layout_height="50dp"
-        android:text="오거리"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="303dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_message6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check2_1" />
 
     <CheckBox
         android:id="@+id/check2_4"
         android:layout_width="171dp"
         android:layout_height="50dp"
-        android:text="문캠"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="303dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_message7"
+        app:layout_constraintStart_toEndOf="@+id/check2_3"
+        app:layout_constraintTop_toBottomOf="@+id/check2_2" />
 
     <CheckBox
         android:id="@+id/check2_1"
         android:layout_width="171dp"
         android:layout_height="50dp"
-        android:text="개운사/정후"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="242dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/check_message8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check1_3" />
 
     <CheckBox
         android:id="@+id/check1_2"
         android:layout_width="171dp"
         android:layout_height="50dp"
-        android:text="양식"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/check_message9"
+        app:layout_constraintStart_toEndOf="@+id/check1_1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/check1_3"
         android:layout_width="171dp"
         android:layout_height="50dp"
-        android:text="중식"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="148dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_message10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check1_1" />
 
     <CheckBox
         android:id="@+id/check1_4"
         android:layout_width="171dp"
         android:layout_height="50dp"
-        android:text="일식"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="148dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_message11"
+        app:layout_constraintStart_toEndOf="@+id/check1_3"
+        app:layout_constraintTop_toBottomOf="@+id/check1_2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="식사종류"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="58dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_message3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="위치"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="211dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/text_message4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="가격"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="367dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/text_message5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/FinishSetButton"
         android:layout_width="170dp"
         android:layout_height="47dp"
-        android:text="선택완료"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="453dp" />
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/text_message6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

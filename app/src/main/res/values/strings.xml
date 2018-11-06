@@ -1,5 +1,36 @@
 <resources>
     <string name="app_name">MyYummyLunch1</string>
+
+    <string name="button_message1">START</string>
+    <string name="button_message2">EXIT</string>
+    <string name="button_message3">종료하기</string>
+    <string name="button_message4">YES</string>
+    <string name="button_message5">NO</string>
+
+    <string name="text_message1">MY YUMMY LUNCH</string>
+    <string name="text_message2">원하는 조건을 선택하세요(복수선택 가능)</string>
+    <string name="text_message3">식사종류</string>
+    <string name="text_message4">위치</string>
+    <string name="text_message5">가격</string>
+    <string name="text_message6">선택완료</string>
+    <string name="text_message7">선택완료!맛있게드세요!</string>
+
+
+    <string name="check_message1">한식</string>
+    <string name="check_message2">저렴</string>
+    <string name="check_message3">무난</string>
+    <string name="check_message4">호화</string>
+    <string name="check_message5">참살이</string>
+    <string name="check_message6">오거리</string>
+    <string name="check_message7">문캠</string>
+    <string name="check_message8">개운사/정후</string>
+    <string name="check_message9">양식</string>
+    <string name="check_message10">중식</string>
+    <string name="check_message11">일식</string>
+
+
+
+
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->
@@ -73,4 +104,5 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
 </resources>

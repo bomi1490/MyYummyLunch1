@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent startIntent=new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(startIntent);
                 finish();
             }
         });
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent exitIntent = new Intent(MainActivity.this, ExitPage.class);
+                startActivity(exitIntent);
                 finish();
             }
         });
