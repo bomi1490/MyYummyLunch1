@@ -6,6 +6,8 @@
     <string name="button_message3">종료하기</string>
     <string name="button_message4">YES</string>
     <string name="button_message5">NO</string>
+    <string name="button_message6">혼자서 결정하기</string>
+    <string name="button_message7">여럿이서 결정하기</string>
 
     <string name="text_message1">MY YUMMY LUNCH</string>
     <string name="text_message2">원하는 조건을 선택하세요(복수선택 가능)</string>
