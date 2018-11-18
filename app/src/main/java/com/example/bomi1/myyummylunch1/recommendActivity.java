@@ -61,19 +61,26 @@ public class recommendActivity extends AppCompatActivity{
 
         }catch(FileNotFoundException e){
             e.printStackTrace();
-            Toast.makeText(getApplicationContext(), "File import failed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
         }catch (IOException e){
             e.printStackTrace();
         }
 
+        //conditionListMaker b=new conditionListMaker();
         String[] str = new String[12];
         for(int i = 0; i < 12; i++){
-            str[i] = array[i][0];
+
+                if(array[i][1]=="1")
+                {str[i] = array[i][0];}
+
+
         }
 
         ArrayAdapter adapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1, str);
         ListView listview = (ListView) findViewById(R.id.recomList);
         listview.setAdapter(adapter);
+
+
 
     }
 }
