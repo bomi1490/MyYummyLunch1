@@ -2,29 +2,20 @@ package com.example.bomi1.myyummylunch1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.content.Intent;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
-import java.util.StringTokenizer;
-
+import java.util.ArrayList;
 
 
 public class recommendActivity extends AppCompatActivity{
 
-    private String [][] array = new String [12][4];
+    private String [][] array = new String [20][4];
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +32,7 @@ public class recommendActivity extends AppCompatActivity{
         }
     });*/
 
-       // final String [] array2 = {"1", "2", "3"};
+
 
         try{
             BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("text.csv")));
@@ -66,21 +57,49 @@ public class recommendActivity extends AppCompatActivity{
             e.printStackTrace();
         }
 
-        //conditionListMaker b=new conditionListMaker();
-        String[] str = new String[12];
-        for(int i = 0; i < 12; i++){
 
-                if(array[i][1]=="1")
-                {str[i] = array[i][0];}
+        ArrayList arr = SettingActivity.conditionList;
 
+        String[] str = new String[20];
+
+        int k=0;
+        for(int i = 0; i < 20; i++){
+
+                if(array[i][1].equals((arr.get(0))))
+                {
+                    str[i] = array[i][0];
+                    k++;//필터링된 항목 개수
+                }
+                else if (array[i][1].equals((arr.get(1)))) {
+                    str[i] = array[i][0];
+                    k++;
+
+                }
+              /* else if(array[i][1].equals((arr.get(2)))){
+                    str[i]=array[i][0];
+                    k++;
+                }*/
+                /*else if(array[i][1].equals((arr.get(3)))){
+                    str[i]=array[i][0];
+                    k++;
+                }*/
+                else
+                {
+                    str[i]="000";
+                }
 
         }
+        String[]str2=new String[k];
+        int m=0;
+        for(int i=0;i<20;i++){
+            if(str[i]!="000"){
+            str2[m]=str[i];
+            m++;}
+        }
 
-        ArrayAdapter adapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1, str);
+        ArrayAdapter adapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1, str2);
         ListView listview = (ListView) findViewById(R.id.recomList);
         listview.setAdapter(adapter);
-
-
 
     }
 }
