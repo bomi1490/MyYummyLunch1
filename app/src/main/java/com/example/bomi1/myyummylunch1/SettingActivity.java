@@ -11,7 +11,10 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 
+
+
 public class SettingActivity extends AppCompatActivity{
+
 
     static public ArrayList conditionList=new ArrayList ();
 
@@ -31,16 +34,19 @@ public class SettingActivity extends AppCompatActivity{
         CheckBox check3_3 = (CheckBox) findViewById(R.id.check3_3);//호화*/
         Button FinishSetButton = (Button) findViewById(R.id.FinishSetButton);
 
+        conditionList.clear();
+        conditionList.add("0");
+        conditionList.add("0");
+        conditionList.add("0");
+        conditionList.add("0");
         check1_1.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.add("1");
+                {conditionList.set(0, "1");
                     Toast.makeText(getApplicationContext(), "check1", Toast.LENGTH_SHORT).show();
                 }
-                else if(!((CheckBox)v).isChecked()){
-                    conditionList.add("0");
-                }
+
 
             }
             });
@@ -48,13 +54,11 @@ public class SettingActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.add("2");
+                {conditionList.set(1,"2");
                     Toast.makeText(getApplicationContext(), "check2", Toast.LENGTH_SHORT).show();
 
                 }
-                else if(!((CheckBox)v).isChecked()){
-                    conditionList.add("0");
-                }
+
 
             }
         });

@@ -21,6 +21,7 @@ public class recommendActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recommend);
 
+
     /*Button button2 = (Button) findViewById(R.id.button2);
 
         button2.setOnClickListener(new View.OnClickListener() {
@@ -65,16 +66,16 @@ public class recommendActivity extends AppCompatActivity{
         int k=0;
         for(int i = 0; i < 20; i++){
 
-                if(array[i][1].equals((arr.get(0))))
+                if(array[i][1].equals(arr.get(0)))
                 {
                     str[i] = array[i][0];
                     k++;//필터링된 항목 개수
                 }
-                else if (array[i][1].equals((arr.get(1)))) {
+                else if (array[i][1].equals(arr.get(1))){
                     str[i] = array[i][0];
                     k++;
-
                 }
+
               /* else if(array[i][1].equals((arr.get(2)))){
                     str[i]=array[i][0];
                     k++;
@@ -92,7 +93,7 @@ public class recommendActivity extends AppCompatActivity{
         String[]str2=new String[k];
         int m=0;
         for(int i=0;i<20;i++){
-            if(str[i]!="000"){
+            if(!(str[i].equals("000"))){
             str2[m]=str[i];
             m++;}
         }
