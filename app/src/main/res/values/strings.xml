@@ -8,6 +8,12 @@
     <string name="button_message5">NO</string>
     <string name="button_message6">혼자서 결정하기</string>
     <string name="button_message7">여럿이서 결정하기</string>
+    <string name="button_message8">RESET</string>
+    <string name="button_message9">DONE</string>
+    <string name="button_message10">뒤로가기</string>
+    <string name="button_message11">선택하기</string>
+    <string name="button_message12">랜덤으로 결정하기</string>
+    <string name="button_message13">Help?</string>
 
     <string name="text_message1">MY YUMMY LUNCH</string>
     <string name="text_message2">원하는 조건을 선택하세요(복수선택 가능)</string>
@@ -29,6 +35,7 @@
     <string name="check_message9">양식</string>
     <string name="check_message10">중식</string>
     <string name="check_message11">일식</string>
+    <string name="check_message12">최근 방문지 제외</string>
 
 
 

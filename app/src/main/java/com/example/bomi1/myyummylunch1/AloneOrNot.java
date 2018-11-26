@@ -15,7 +15,7 @@ public class AloneOrNot extends AppCompatActivity {
 
         Button AloneButton = (Button) findViewById(R.id.AloneButton);
         Button TogetherButton = (Button) findViewById(R.id.TogetherButton);
-
+        Button RandomButton=(Button) findViewById(R.id.randombutton);
         AloneButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -27,8 +27,23 @@ public class AloneOrNot extends AppCompatActivity {
         TogetherButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voteIntent = new Intent(AloneOrNot.this, voteActivity.class);
+                Intent voteIntent = new Intent(AloneOrNot.this, KakaoActivity.class);
                 startActivity(voteIntent);
                 finish();
             }
-        });}}
+        });
+       RandomButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent randomIntent = new Intent(AloneOrNot.this, randomActivity.class);
+                startActivity(randomIntent);
+                finish();
+            }
+        });
+
+
+
+    }
+}
+
+

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button StartButton = (Button) findViewById(R.id.StartButton);
         Button ExitButton = (Button) findViewById(R.id.ExitButton);
+        Button ExplainButton = (Button) findViewById(R.id.ExplainButton);
 
         StartButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -29,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent exitIntent = new Intent(MainActivity.this, ExitPage.class);
                 startActivity(exitIntent);
+                finish();
+            }
+        });
+        ExplainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent explainIntent = new Intent(MainActivity.this, ExplainPage.class);
+                startActivity(explainIntent);
                 finish();
             }
         });

@@ -21,6 +21,8 @@
         <activity android:name=".SettingActivity"/>
         <activity android:name=".FinalActivity"/>
         <activity android:name=".AloneOrNot"/>
+        <activity android:name=".randomActivity"/>
+        <activity android:name=".ExplainPage"/>
 
     </application>
 
