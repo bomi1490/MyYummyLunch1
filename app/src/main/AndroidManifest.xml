@@ -23,6 +23,7 @@
         <activity android:name=".AloneOrNot"/>
         <activity android:name=".randomActivity"/>
         <activity android:name=".ExplainPage"/>
+        <activity android:name=".KakaoActivity"/>
 
     </application>
 

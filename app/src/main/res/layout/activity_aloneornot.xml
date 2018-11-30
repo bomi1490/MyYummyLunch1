@@ -11,8 +11,10 @@
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/button_message6"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,8 +23,10 @@
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/button_message7"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,8 +35,10 @@
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/button_message12"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

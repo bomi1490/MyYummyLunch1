@@ -19,8 +19,8 @@ import java.util.ArrayList;
 
 
 public class recommendActivity extends AppCompatActivity {
-   static public ArrayList recentpl=new ArrayList();
-    private String [][] array = new String [20][4];
+  static public ArrayList recentpl=new ArrayList();
+    static public String [][] array = new String [20][4];
     static public ArrayList str2=new ArrayList();
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,13 +59,15 @@ public class recommendActivity extends AppCompatActivity {
 
         int k=0;
         for(int i = 0; i < 20; i++){
-
+            int recentplsize=recentpl.size();
               if(array[i][1].equals(arr.get(0))||array[i][1].equals(arr.get(1))||array[i][1].equals(arr.get(2))||array[i][1].equals(arr.get(3))||arr.get(0).equals("0")&&arr.get(1).equals("0")&&arr.get(2).equals("0")&&arr.get(3).equals("0")){
                     if(array[i][2].equals(arr2.get(0))||array[i][2].equals(arr2.get(1))||array[i][2].equals(arr2.get(2))||array[i][2].equals(arr2.get(3))||arr2.get(0).equals("0")&&arr2.get(1).equals("0")&&arr2.get(2).equals("0")&&arr2.get(3).equals("0")) {
                         if(array[i][3].equals(arr3.get(0))||array[i][3].equals(arr3.get(1))||array[i][3].equals(arr3.get(2))||arr3.get(0).equals("0")&&arr3.get(1).equals("0")&&arr3.get(2).equals("0")){
+                        //if(SettingActivity.conditionList4.get(0).equals("12")&&)
                          str[i] = array[i][0];
                          k++;//필터링된 항목 개수
-                        }
+
+                       }
                         else{
                             str[i]="000";
                         }
@@ -98,11 +100,27 @@ public class recommendActivity extends AppCompatActivity {
 
                 ListView listview = (ListView) parent;
                 String clickedplace = (String) listview.getItemAtPosition(position);
+                int exactplacenum=0;
+                for(int i=0;i<20;i++){
+                    if(recommendActivity.array[i][0].equals(clickedplace)){
+                        exactplacenum=i;
+                        break;
+                    }
+                }
                 recentpl.add(clickedplace);
 
                 setContentView(R.layout.activity_placeinfo);
                 TextView t1 = (TextView) findViewById(R.id.placename) ;
                 t1.setText(clickedplace) ;
+                TextView t2 = (TextView) findViewById(R.id.foodtype) ;
+                t2.setText(array[exactplacenum][1]) ;
+                TextView t3 = (TextView) findViewById(R.id.placelocation) ;
+                t3.setText(array[exactplacenum][2]) ;
+                TextView t4 = (TextView) findViewById(R.id.foodprice) ;
+                t4.setText(array[exactplacenum][3]) ;
+                TextView t5 = (TextView) findViewById(R.id.menuinfo) ;
+                t5.setText(clickedplace) ;
+
                 Button back=(Button) findViewById(R.id.backbutton);
                 Button ok=(Button) findViewById(R.id.okbutton);
 
@@ -112,7 +130,7 @@ public class recommendActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent okIntent = new Intent(recommendActivity.this, FinalActivity.class);
                         startActivity(okIntent);
-                        finish();
+
                     }
                 });
                 back.setOnClickListener(new View.OnClickListener() {
@@ -120,7 +138,7 @@ public class recommendActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent backIntent = new Intent(recommendActivity.this, recommendActivity.class);
                         startActivity(backIntent);
-                        finish();
+
                     }
                 });
 

@@ -1,5 +1,11 @@
 package com.example.bomi1.myyummylunch1;
 
-public class KakaoActivity {
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-}
+public class KakaoActivity extends AppCompatActivity {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_kakao);
+
+}}

@@ -19,6 +19,7 @@ public class SettingActivity extends AppCompatActivity{
     static public ArrayList conditionList=new ArrayList ();
     static public ArrayList conditionList2=new ArrayList();
     static public ArrayList conditionList3=new ArrayList();
+    static public ArrayList conditionList4=new ArrayList();
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,46 +49,25 @@ public class SettingActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.set(0, "1");
-                }
-
-
-            }
+                {conditionList.set(0, "1");  } }
             });
         check1_2.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.set(1,"2");
-
-
-                }
-
-
-            }
+                {conditionList.set(1,"2"); }      }
         });
       check1_3.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.set(2,"3");
-
-
-                }
-
-
-            }
+                {conditionList.set(2,"3"); }     }
         });
         check1_4.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.set(3,"4");
-
-                }
-
-
-            }
+                {conditionList.set(3,"4");}     }
         });
 
         conditionList2.clear();
@@ -100,48 +80,25 @@ public class SettingActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList2.set(0, "5");
-
-                }
-
-
-            }
+                {conditionList2.set(0, "5"); }          }
         });
         check2_2.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList2.set(1,"6");
-
-
-                }
-
-
-            }
+                {conditionList2.set(1,"6");  }        }
         });
         check2_3.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList2.set(2,"7");
-
-
-                }
-
-
-            }
+                {conditionList2.set(2,"7");}     }
         });
         check2_4.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList2.set(3,"8");
-
-                }
-
-
-            }
-        });
+                {conditionList2.set(3,"8"); } }});
 
         conditionList3.clear();
         conditionList3.add("0");
@@ -152,43 +109,28 @@ public class SettingActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList3.set(0, "9");
-                }
-
-
-            }
+                {conditionList3.set(0, "9");  }      }
         });
         check3_2.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList3.set(1,"10");
-
-
-                }
-
-
-            }
-        });
+                {conditionList3.set(1,"10");  } }  });
         check3_3.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList3.set(2,"11");
-
-
-                }
-
-
-            }
+                {conditionList3.set(2,"11"); }       }
         });
 
+        conditionList4.clear();
+        conditionList4.add("0");
         recentcheck.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
                 {
-                    //최근 방문지 제외 TO DO
+                    conditionList4.set(0,"12");
 
                 }
 
@@ -202,7 +144,7 @@ public class SettingActivity extends AppCompatActivity{
             public void onClick(View view) {
                 Intent RecomIntent = new Intent(SettingActivity.this, AloneOrNot.class);
                 startActivity(RecomIntent);
-                finish();
+
             }
         });
    }}

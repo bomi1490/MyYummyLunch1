@@ -14,6 +14,7 @@
     <string name="button_message11">선택하기</string>
     <string name="button_message12">랜덤으로 결정하기</string>
     <string name="button_message13">Help?</string>
+    <string name="button_message14">카카오톡으로 내보내기</string>
 
     <string name="text_message1">MY YUMMY LUNCH</string>
     <string name="text_message2">원하는 조건을 선택하세요(복수선택 가능)</string>

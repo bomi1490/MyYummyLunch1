@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 Intent startIntent=new Intent(MainActivity.this, SettingActivity.class);
                 startActivity(startIntent);
-                finish();
+
             }
         });
         ExitButton.setOnClickListener(new View.OnClickListener() {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent exitIntent = new Intent(MainActivity.this, ExitPage.class);
                 startActivity(exitIntent);
-                finish();
+
             }
         });
         ExplainButton.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent explainIntent = new Intent(MainActivity.this, ExplainPage.class);
                 startActivity(explainIntent);
-                finish();
+
             }
         });
 

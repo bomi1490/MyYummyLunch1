@@ -21,7 +21,7 @@ public class AloneOrNot extends AppCompatActivity {
             public void onClick(View view){
                 Intent aloneIntent=new Intent(AloneOrNot.this, recommendActivity.class);
                 startActivity(aloneIntent);
-                finish();
+
             }
         });
         TogetherButton.setOnClickListener(new View.OnClickListener() {
@@ -29,7 +29,7 @@ public class AloneOrNot extends AppCompatActivity {
             public void onClick(View view) {
                 Intent voteIntent = new Intent(AloneOrNot.this, KakaoActivity.class);
                 startActivity(voteIntent);
-                finish();
+
             }
         });
        RandomButton.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +37,7 @@ public class AloneOrNot extends AppCompatActivity {
             public void onClick(View view) {
                 Intent randomIntent = new Intent(AloneOrNot.this, randomActivity.class);
                 startActivity(randomIntent);
-                finish();
+
             }
         });
 
