@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent explainIntent = new Intent(MainActivity.this, ExplainPage.class);
                 startActivity(explainIntent);
 
+
             }
         });
 

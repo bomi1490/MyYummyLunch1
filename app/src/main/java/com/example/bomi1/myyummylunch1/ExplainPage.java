@@ -16,8 +16,7 @@ public class ExplainPage extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent backIntent=new Intent(ExplainPage.this, MainActivity.class);
-                startActivity(backIntent);
+
                 finish();
             }
         });

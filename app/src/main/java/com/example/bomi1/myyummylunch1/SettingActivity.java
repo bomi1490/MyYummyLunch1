@@ -16,10 +16,15 @@ import java.util.ArrayList;
 public class SettingActivity extends AppCompatActivity{
 
 
-    static public ArrayList conditionList=new ArrayList ();
-    static public ArrayList conditionList2=new ArrayList();
-    static public ArrayList conditionList3=new ArrayList();
-    static public ArrayList conditionList4=new ArrayList();
+    private ArrayList conditionList=new ArrayList ();
+    private ArrayList conditionList2=new ArrayList();
+    private ArrayList conditionList3=new ArrayList();
+    private ArrayList conditionList4=new ArrayList();
+    static public ArrayList conditionList_1=new ArrayList();
+    static public ArrayList conditionList_2=new ArrayList();
+    static public ArrayList conditionList_3=new ArrayList();
+    static public ArrayList conditionList_4=new ArrayList();
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -142,12 +147,17 @@ public class SettingActivity extends AppCompatActivity{
         FinishSetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                conditionList_1=conditionList;
+                conditionList_2=conditionList2;
+                conditionList_3=conditionList3;
+                conditionList_4=conditionList4;
                 Intent RecomIntent = new Intent(SettingActivity.this, AloneOrNot.class);
                 startActivity(RecomIntent);
 
             }
         });
-   }}
+   }
+}
 
 
 

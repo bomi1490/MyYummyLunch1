@@ -29,4 +29,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation files('libs/jxl.jar')
     implementation files('libs/jxl.jar')
+
+   compile group: project.KAKAO_SDK_GROUP, name:'kakaolink', version: project.KAKAO_SDK_VERSION
 }
