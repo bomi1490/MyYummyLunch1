@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.*;
 
@@ -19,7 +20,7 @@ public class randomActivity extends AppCompatActivity {
         int listsize=AloneOrNot.str2.size();//리스트가 10개면 10
         int randomnum= (int) (Math.random() * listsize);//0~9 출력
         exactplacenumber=0;
-        for(int i=0;i<20;i++){
+        for(int i=0;i<AloneOrNot.NUMBER;i++){
             if(AloneOrNot.array[i][0].equals(AloneOrNot.str2.get(randomnum))){
                 exactplacenumber=i;
                 break;
@@ -47,32 +48,22 @@ public class randomActivity extends AppCompatActivity {
         okButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* File file = new File("RecentPlace.txt") ;
+                File file = new File("RecentPlace.txt") ;
                 FileWriter fw = null ;
                 String text = "This is TEST string." ;
-
-                try {
                     // open file.
-                    fw = new FileWriter(file) ;
-
                     // write file.
+                /*
+                try {
+                    fw = new FileWriter();
                     fw.write(text) ;
-
-                } catch (Exception e) {
-                    e.printStackTrace() ;
+                    fw.flush();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
                 }
 
-                // close file.
-                if (fw != null) {
-                    // catch Exception here or throw.
-                    try {
-                        fw.close() ;
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }*/
-
-                AloneOrNot.recentpl.add(AloneOrNot.array[exactplacenumber][0]);
+               */
                 Intent exit2Intent = new Intent(randomActivity.this, ExitPage.class);
                 startActivity(exit2Intent);
 

@@ -14,7 +14,7 @@
     <string name="button_message11">선택하기</string>
     <string name="button_message12">랜덤으로 결정하기</string>
     <string name="button_message13">Help?</string>
-    <string name="button_message14">카카오톡으로 내보내기</string>
+    <string name="button_message14">식당 목록 내보내기</string>
     <string name="button_message15">다시하기</string>
 
     <string name="text_message1">MY YUMMY LUNCH</string>
@@ -38,7 +38,7 @@
     <string name="check_message9">양식</string>
     <string name="check_message10">중식</string>
     <string name="check_message11">일식</string>
-    <string name="check_message12">최근 방문지 제외</string>
+
 
 
 

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import static com.example.bomi1.myyummylunch1.AloneOrNot.recentpl;
+
 
 public class ClickedPlaceInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,18 @@ public class ClickedPlaceInfo extends AppCompatActivity {
         TextView t2 = (TextView) findViewById(R.id.foodtype) ;
         t2.setText(AloneOrNot.array[recommendActivity.exactplacenum][1]) ;
         TextView t3 = (TextView) findViewById(R.id.placelocation) ;
-        t3.setText(AloneOrNot.array[recommendActivity.exactplacenum][2]) ;
+        if(AloneOrNot.array[recommendActivity.exactplacenum][2].equals("A"))
+        t3.setText("개운사/정후") ;
+        else if(AloneOrNot.array[recommendActivity.exactplacenum][2].equals("B"))
+            t3.setText("참살이") ;
+        else if(AloneOrNot.array[recommendActivity.exactplacenum][2].equals("C"))
+            t3.setText("오거리") ;
+        else if(AloneOrNot.array[recommendActivity.exactplacenum][2].equals("D"))
+            t3.setText("문과캠") ;
         TextView t4 = (TextView) findViewById(R.id.foodprice) ;
         t4.setText(AloneOrNot.array[recommendActivity.exactplacenum][3]) ;
         TextView t5 = (TextView) findViewById(R.id.menuinfo) ;
-        t5.setText(recommendActivity.clickedplace) ;
+        t5.setText(AloneOrNot.array[recommendActivity.exactplacenum][4]) ;
 
         Button back=(Button) findViewById(R.id.backbutton);
         Button ok=(Button) findViewById(R.id.okbutton);
@@ -31,7 +38,7 @@ public class ClickedPlaceInfo extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                recentpl.add(recommendActivity.clickedplace);
+
                 Intent okIntent = new Intent(ClickedPlaceInfo.this, FinalActivity.class);
                 startActivity(okIntent);
 

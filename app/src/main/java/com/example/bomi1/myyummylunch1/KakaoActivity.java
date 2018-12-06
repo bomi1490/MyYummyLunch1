@@ -1,5 +1,6 @@
 package com.example.bomi1.myyummylunch1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,11 +17,7 @@ public class KakaoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         final Context ctx = this;
         setContentView(R.layout.activity_kakao);
-        try{
-            kakaoLink=KakaoLink.getKakaoLink(KakaoActivity.this);
-        } catch(KakaoParameterException e){
-            e.printStackTrace();
-        }
+
 
 
         Button KButton = (Button) findViewById(R.id.kakaoB);
@@ -28,17 +25,25 @@ public class KakaoActivity extends AppCompatActivity {
         KButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                String s="안녕";
-                final KakaoTalkLinkMessageBuilder kakaoTalkLinkMessageBuilder=kakaoLink.createKakaoTalkLinkMessageBuilder();
-
-                try{
-                    kakaoLink.sendMessage(kakaoTalkLinkMessageBuilder, ctx);
-                } catch(KakaoParameterException e){
-                    e.printStackTrace();
+                String linkstring=null;
+                for(String name: AloneOrNot.str2){
+                    linkstring+="/n";
+                    linkstring+=name;
                 }
+                System.out.println(linkstring);
+                Intent intent=new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_SUBJECT,"MY YUMMY LUNCH 추천 메뉴");
+
+                intent.putExtra(Intent.EXTRA_TEXT,linkstring);
+                Intent chooser=Intent.createChooser(intent,"공유하기");
+                startActivity(chooser);
 
             }
         });
+
+
 
 
 }}

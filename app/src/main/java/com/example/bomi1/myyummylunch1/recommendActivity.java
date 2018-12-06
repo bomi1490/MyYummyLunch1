@@ -29,13 +29,13 @@ public class recommendActivity extends AppCompatActivity {
                 ListView listview = (ListView) parent;
                 clickedplace = (String) listview.getItemAtPosition(position);
                 exactplacenum=0;
-                for(int i=0;i<20;i++){
+                for(int i=0;i<AloneOrNot.NUMBER;i++){
                     if(AloneOrNot.array[i][0].equals(clickedplace)){
                         exactplacenum=i;
                         break;
                     }
                 }
-                AloneOrNot.recentpl.add(clickedplace);
+
                 Intent clickedIntent = new Intent(recommendActivity.this, ClickedPlaceInfo.class);
 
                 startActivity(clickedIntent);

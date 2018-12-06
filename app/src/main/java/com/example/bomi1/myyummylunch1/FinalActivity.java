@@ -14,10 +14,10 @@ public class FinalActivity extends AppCompatActivity{
         setContentView(R.layout.activity_final);
 
         Button exitButton = (Button) findViewById(R.id.exitButton);
-        int size=AloneOrNot.recentpl.size();
-        String string= (String) AloneOrNot.recentpl.get(size-1);
+
+
         TextView t1 = (TextView) findViewById(R.id.place) ;
-        t1.setText(string) ;
+        t1.setText(recommendActivity.clickedplace) ;
 
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
