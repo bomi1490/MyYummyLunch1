@@ -26,6 +26,7 @@
         <activity android:name=".randomActivity"/>
         <activity android:name=".ExplainPage"/>
         <activity android:name=".ClickedPlaceInfo"/>
+        <activity android:name=".FinalActivity2"/>
         <activity android:name=".KakaoActivity"/>
         <meta-data
             android:name="com.kakao.sdk.AppKey"

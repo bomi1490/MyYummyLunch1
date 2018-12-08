@@ -48,23 +48,9 @@ public class randomActivity extends AppCompatActivity {
         okButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                File file = new File("RecentPlace.txt") ;
-                FileWriter fw = null ;
-                String text = "This is TEST string." ;
-                    // open file.
-                    // write file.
-                /*
-                try {
-                    fw = new FileWriter();
-                    fw.write(text) ;
-                    fw.flush();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    Toast.makeText(getApplicationContext(), "error", Toast.LENGTH_SHORT).show();
-                }
 
-               */
-                Intent exit2Intent = new Intent(randomActivity.this, ExitPage.class);
+
+                Intent exit2Intent = new Intent(randomActivity.this, FinalActivity2.class);
                 startActivity(exit2Intent);
 
             }

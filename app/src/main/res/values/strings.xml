@@ -25,6 +25,9 @@
     <string name="text_message6">선택완료</string>
     <string name="text_message7">선택완료!맛있게드세요!</string>
     <string name="text_message8">추천 메뉴 :</string>
+    <string name="text_message9">식사종류 :</string>
+    <string name="text_message10">위치 :</string>
+    <string name="text_message11">가격 :</string>
 
 
     <string name="check_message1">한식</string>

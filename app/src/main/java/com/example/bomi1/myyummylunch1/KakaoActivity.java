@@ -25,9 +25,9 @@ public class KakaoActivity extends AppCompatActivity {
         KButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                String linkstring=null;
+                String linkstring=" ";
                 for(String name: AloneOrNot.str2){
-                    linkstring+="/n";
+                    linkstring+="/";
                     linkstring+=name;
                 }
                 System.out.println(linkstring);

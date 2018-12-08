@@ -54,25 +54,38 @@ public class SettingActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.set(0, "한식");  } }
+                {conditionList.set(0, "한식");  }
+            else{
+                conditionList.set(0,"0");}
+            }
             });
         check1_2.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.set(1,"양식"); }      }
+                {conditionList.set(1,"양식"); }
+                else{
+                    conditionList.set(1,"0");
+                }
+            }
         });
       check1_3.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.set(2,"중식"); }     }
+                {conditionList.set(2,"중식"); }
+            else{
+                conditionList.set(2,"0");}
+            }
         });
         check1_4.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList.set(3,"일식");}     }
+                {conditionList.set(3,"일식");}
+            else{
+                conditionList.set(3,"0");}
+            }
         });
 
         conditionList2.clear();
@@ -85,25 +98,37 @@ public class SettingActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList2.set(0, "A"); }          }
+                {conditionList2.set(0, "A"); }
+            else{
+                conditionList2.set(0,"0");}
+            }
         });
         check2_2.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList2.set(1,"B");  }        }
+                {conditionList2.set(1,"B");  }
+            else{
+                conditionList2.set(1,"0");}
+            }
         });
         check2_3.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList2.set(2,"C");}     }
+                {conditionList2.set(2,"C");}
+            else{
+                conditionList2.set(2,"0");}
+            }
         });
         check2_4.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList2.set(3,"D"); } }});
+                {conditionList2.set(3,"D"); }
+            else{
+                conditionList2.set(3,"0");}
+            }});
 
         conditionList3.clear();
         conditionList3.add("0");
@@ -114,18 +139,27 @@ public class SettingActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList3.set(0, "저렴");  }      }
+                {conditionList3.set(0, "저렴");  }
+            else{
+                conditionList3.set(0,"0");}
+            }
         });
         check3_2.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList3.set(1,"무난");  } }  });
+                {conditionList3.set(1,"무난");  }
+            else{
+                conditionList3.set(1,"0");}
+            }  });
         check3_3.setOnClickListener(new CheckBox.OnClickListener(){
             @Override
             public void onClick(View v) {
                 if(((CheckBox)v).isChecked())
-                {conditionList3.set(2,"호화"); }       }
+                {conditionList3.set(2,"호화"); }
+            else{
+                conditionList3.set(2,"0");}
+            }
         });
 
 

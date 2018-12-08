@@ -14,6 +14,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="32dp"
         android:text="TextView"
+        android:textSize="7pt"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/backB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
