@@ -34,6 +34,7 @@ public class ClickedPlaceInfo extends AppCompatActivity {
         Button back=(Button) findViewById(R.id.backbutton);
         Button ok=(Button) findViewById(R.id.okbutton);
 
+
         ok.setOnClickListener(new View.OnClickListener() {//음식점선택시
 
             @Override

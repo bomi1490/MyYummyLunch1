@@ -1,5 +1,6 @@
 package com.example.bomi1.myyummylunch1;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -7,21 +8,34 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+
 public class AloneOrNot extends AppCompatActivity {
+
 
     static public ArrayList<String> str2=new ArrayList<>();
     static int NUMBER;
     private int number;
     public static String[][] array;
+
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aloneornot);
+
+
+
+
+
+
+
 
         try{//항목개수세기
             BufferedReader reader = new BufferedReader(new InputStreamReader(getAssets().open("text.csv")));

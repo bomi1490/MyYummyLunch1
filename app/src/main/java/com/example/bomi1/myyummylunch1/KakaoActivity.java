@@ -12,10 +12,10 @@ import com.kakao.kakaolink.KakaoTalkLinkMessageBuilder;
 import com.kakao.util.KakaoParameterException;
 
 public class KakaoActivity extends AppCompatActivity {
-   public KakaoLink kakaoLink;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final Context ctx = this;
+
         setContentView(R.layout.activity_kakao);
 
 

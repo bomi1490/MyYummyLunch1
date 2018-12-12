@@ -33,6 +33,28 @@ public class randomActivity extends AppCompatActivity {
         TextView textview=(TextView)findViewById(R.id.randomplace);
         textview.setText(AloneOrNot.array[exactplacenumber][0]);
 
+        TextView type=(TextView)findViewById(R.id.typetype);
+        type.setText(AloneOrNot.array[exactplacenumber][1]);
+
+        TextView locate=(TextView)findViewById(R.id.locatelocate);
+        if (AloneOrNot.array[exactplacenumber][2].equals("A")){
+            locate.setText("개운사/정후");
+        }
+        if (AloneOrNot.array[exactplacenumber][2].equals("B")){
+            locate.setText("참살이");
+        }
+        if (AloneOrNot.array[exactplacenumber][2].equals("C")){
+            locate.setText("오거리");
+        }
+        if (AloneOrNot.array[exactplacenumber][2].equals("D")){
+            locate.setText("문캠");
+        }
+
+
+
+        TextView price=(TextView)findViewById(R.id.priceprice);
+        price.setText(AloneOrNot.array[exactplacenumber][3]);
+
 
         Button againButton = (Button) findViewById(R.id.AgainButton);
        againButton.setOnClickListener(new View.OnClickListener() {
